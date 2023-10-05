@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <html>
+    <body>
+      <div class="wrapper">
+        <div class="calculator">
+          <input type="text" id="result" readonly />
+          <br />
+          <button class="btn-clear" id="Clear" onclick="clearResult()">
+            C
+          </button>
+          <button class="btn-Prc" id="module" onClick="appendToResult('%')">
+            %
+          </button>
+          <button class="btn-devide" id="module" onClick="appendToResult('/')">
+            /
+          </button>
+          <button class="btn-into" onclick="appendToResult('*')">*</button>
+          <br />
+          <button class="btn7" onclick="appendToResult('7')">7</button>
+          <button class="btn8" onclick="appendToResult('8')">8</button>
+          <button class="btn9" onclick="appendToResult('9')">9</button>
+          <button class="btn-dot" onclick="appendToResult('.')">.</button>
+          <br />
+          <button class="btn4" onclick="appendToResult('4')">4</button>
+          <button class="btn5" onclick="appendToResult('5')">5</button>
+          <button class="btn6" onclick="appendToResult('6')">6</button>
+          <button class="btn-min" onclick="appendToResult('-')">-</button>
+          <br />
+          <button class="btn1" onclick="appendToResult('1')">1</button>
+          <button class="btn2" onclick="appendToResult('2')">2</button>
+          <button class="btn3" onclick="appendToResult('3')">3</button>
+          <button class="btn-plus" onclick="appendToResult('+')">+</button>
+          <br />
+          <button class="btn-dzero" onclick="appendToResult('00')">00</button>
+          <button class="btn-zero" onclick="appendToResult('0')">0</button>
+          <button class="btn-equal" onclick="calculateResult()">=</button>
+          <button class="btn-X" onclick="deleteCharacter()">X</button>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </body>
+  </html>
+</html>
